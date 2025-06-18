@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATEEQ - Shop Collections</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="assets/ATEEQLOGO.png" alt="ATEEQ Logo" class="nav-logo">
+            <h1>ATEEQ</h1>
+        </div>
+        <div class="nav-links">
+            <a href="index.html#collections">Collections</a>
+            <a href="index.html#about">About</a>
+            <a href="#" class="active">Shop</a>
+            <a href="index.html#passport">Passport</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#search"><i class="fas fa-search"></i></a>
+            <a href="#cart"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#account"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <main class="shop-main">
+        <div class="shop-header">
+            <h1 class="collection-name">All Collections</h1>
+            <div class="shop-filters">
+                <button class="filter-btn active" data-collection="all">All</button>
+                <button class="filter-btn" data-collection="mexico">Mexico</button>
+                <button class="filter-btn" data-collection="egypt">Egypt</button>
+                <button class="filter-btn" data-collection="turkiye">Türkiye</button>
+                <button class="filter-btn" data-collection="brazil">Brazil</button>
+                <button class="filter-btn" data-collection="lebanon">Lebanon</button>
+                <button class="filter-btn" data-collection="libya">Libya</button>
+                <button class="filter-btn" data-collection="iraq">Iraq</button>
+                <button class="filter-btn" data-collection="sudan">Sudan</button>
+                <button class="filter-btn" data-collection="syria">Syria</button>
+            </div>
+        </div>
+
+        <div class="shop-grid">
+            <!-- Mexico Collection -->
+            <div class="shop-item" data-collection="mexico">
+                <div class="item-image">
+                    <img src="assets/mexico.jpg" alt="Oaxaca Leather Backpack">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Oaxaca Leather Backpack</h3>
+                    <p class="item-description">Traditional Oaxacan craftsmanship</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Egypt Collection -->
+            <div class="shop-item" data-collection="egypt">
+                <div class="item-image">
+                    <img src="assets/Egypt.jpg" alt="Pharaoh's Gold Clutch">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Pharaoh's Gold Clutch</h3>
+                    <p class="item-description">Elegant design inspired by ancient Egypt</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Turkiye Collection -->
+            <div class="shop-item" data-collection="turkiye">
+                <div class="item-image">
+                    <img src="assets/turkiye.jpg" alt="Ottoman Pattern Bag">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Ottoman Pattern Bag</h3>
+                    <p class="item-description">Features traditional Ottoman motifs</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Brazil Collection -->
+            <div class="shop-item" data-collection="brazil">
+                <div class="item-image">
+                    <img src="assets/brazil.jpg" alt="Carnival Shoulder Bag">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Carnival Shoulder Bag</h3>
+                    <p class="item-description">Vibrant colors of Brazilian Carnival</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lebanon Collection -->
+            <div class="shop-item" data-collection="lebanon">
+                <div class="item-image">
+                    <img src="assets/lebnan.jpg" alt="Phoenician Heritage Tote">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Phoenician Heritage Tote</h3>
+                    <p class="item-description">Mediterranean elegance with ancient Phoenician motifs</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Libya Collection -->
+            <div class="shop-item" data-collection="libya">
+                <div class="item-image">
+                    <img src="assets/libya.jpg" alt="Berber Desert Satchel">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Berber Desert Satchel</h3>
+                    <p class="item-description">Inspired by ancient Berber traditions and desert landscapes</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Iraq Collection -->
+            <div class="shop-item" data-collection="iraq">
+                <div class="item-image">
+                    <img src="assets/iraq.jpg" alt="Mesopotamian Crossbody">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Mesopotamian Crossbody</h3>
+                    <p class="item-description">Celebrating the cradle of civilization with ancient motifs</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Sudan Collection -->
+            <div class="shop-item" data-collection="sudan">
+                <div class="item-image">
+                    <img src="assets/sudan.jpg" alt="Nubian Heritage Bag">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Nubian Heritage Bag</h3>
+                    <p class="item-description">Honoring the rich Nubian heritage and the majesty of the Nile</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Syria Collection -->
+            <div class="shop-item" data-collection="syria">
+                <div class="item-image">
+                    <img src="assets/syria.jpg" alt="Damascene Silk Clutch">
+                    <div class="item-overlay">
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                </div>
+                <div class="item-details">
+                    <h3>Damascene Silk Clutch</h3>
+                    <p class="item-description">Inspired by the ancient Silk Road and Damascene craftsmanship</p>
+                    <p class="item-price">500 TL</p>
+                    <button class="add-to-cart-btn" aria-label="Add to cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const shopItems = document.querySelectorAll('.shop-item');
+            const collectionName = document.querySelector('.collection-name');
+            
+            // Get the collection parameter from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedCollection = urlParams.get('collection');
+            
+            // If a collection is specified in the URL, filter for it
+            if (selectedCollection) {
+                filterCollection(selectedCollection);
+                // Update active filter button
+                filterBtns.forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.collection === selectedCollection);
+                });
+                // Update collection name
+                collectionName.textContent = selectedCollection.charAt(0).toUpperCase() + 
+                                          selectedCollection.slice(1) + ' Collection';
+            }
+
+            // Filter functionality
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    const collection = btn.dataset.collection;
+                    filterCollection(collection);
+                    
+                    // Update collection name
+                    if (collection === 'all') {
+                        collectionName.textContent = 'All Collections';
+                    } else {
+                        collectionName.textContent = collection.charAt(0).toUpperCase() + 
+                                                   collection.slice(1) + ' Collection';
+                    }
+                });
+            });
+
+            function filterCollection(collection) {
+                shopItems.forEach(item => {
+                    if (collection === 'all' || item.dataset.collection === collection) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            // Quick view functionality
+            const quickViewBtns = document.querySelectorAll('.quick-view-btn');
+            quickViewBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const item = btn.closest('.shop-item');
+                    const itemName = item.querySelector('h3').textContent;
+                    const itemPrice = item.querySelector('.item-price').textContent;
+                    const itemDesc = item.querySelector('.item-description').textContent;
+                    // Add your quick view modal logic here
+                    alert(`Quick View: ${itemName}\nPrice: ${itemPrice}\n${itemDesc}`);
+                });
+            });
+
+            // Add to cart functionality
+            const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+            addToCartBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const item = btn.closest('.shop-item');
+                    const itemName = item.querySelector('h3').textContent;
+                    // Add your cart logic here
+                    alert(`Added to cart: ${itemName}`);
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

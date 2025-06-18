@@ -1,0 +1,217 @@
+.shop-main {
+    padding: 120px 5% 5rem;
+    min-height: 100vh;
+    background: #fafafa;
+}
+
+.shop-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.collection-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    color: #5C0F1C;
+    margin-bottom: 1.5rem;
+}
+
+.shop-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #5C0F1C;
+    background: transparent;
+    color: #5C0F1C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.filter-btn:hover {
+    background: rgba(92, 15, 28, 0.1);
+}
+
+.filter-btn.active {
+    background: #5C0F1C;
+    color: white;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.shop-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.shop-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.item-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.shop-item:hover .item-image img {
+    transform: scale(1.05);
+}
+
+/* Specific styling for Iraq shop item */
+.shop-item[data-collection="iraq"] .item-image img {
+    object-fit: cover !important;
+    object-position: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+}
+
+.item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 15, 28, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.shop-item:hover .item-overlay {
+    opacity: 1;
+}
+
+.quick-view-btn {
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: #5C0F1C;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+.shop-item:hover .quick-view-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.item-details {
+    padding: 1.5rem;
+    position: relative;
+    min-height: 180px;
+}
+
+.item-details h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: #5C0F1C;
+    margin-bottom: 0.5rem;
+}
+
+.item-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.item-price {
+    font-weight: 600;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-to-cart-btn {
+    width: 50px;
+    height: 50px;
+    background: #5C0F1C;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(92, 15, 28, 0.2);
+}
+
+.add-to-cart-btn:hover {
+    background: #4a0c16;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(92, 15, 28, 0.3);
+}
+
+@media (max-width: 768px) {
+    .shop-filters {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.8rem;
+    }
+    
+    .collection-name {
+        font-size: 2.5rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-main {
+        padding: 100px 3% 3rem;
+    }
+    
+    .collection-name {
+        font-size: 2rem;
+    }
+    
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+} 
